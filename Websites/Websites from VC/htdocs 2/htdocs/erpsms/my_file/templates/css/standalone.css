@@ -1,0 +1,65 @@
+/*<!--body {
+    padding:50px 80px;
+    font-family:"Lucida Grande","bitstream vera sans","trebuchet ms",sans-serif,verdana;
+}-->
+*/
+a:active {
+    outline:none;
+}
+
+:focus {
+    -moz-outline-style:none;
+}
+#err1, #err2, #err3, #err4, #err5, #err6, #err7, #err8, #err9,#err10
+{
+	color:red;
+}
+ /* #myform {
+  border:1px outset #ccc;
+  background:#fff;
+  padding:20px;
+  margin:20px auto;
+  width:450px;
+  font-size:12px;
+  -moz-border-radius:4px;
+  }
+
+  #myform h3 {
+  text-align:center;
+  margin:0 0 10px 0;
+  }*/
+
+  #inputs label, #inputs input, #inputs textarea, #inputs select {
+  display: block;
+  width: 150px;
+  float: left;
+  margin-bottom: 20px;
+  }
+
+  #inputs label {
+  text-align: right;
+  width: 100px;
+  padding-right: 20px;
+  }
+
+  #inputs br {
+  clear: left;
+  }
+.tooltip {
+    background-color:#000;
+    border:1px solid #fff;
+    padding:10px 15px;
+    width:200px;
+    display:none;
+    color:#fff;
+    text-align:left;
+    font-size:12px;
+ 
+    /* outline radius for mozilla/firefox only */
+    -moz-box-shadow:0 0 10px #000;
+    -webkit-box-shadow:0 0 10px #000;
+}
+h4
+{
+color:red;
+}

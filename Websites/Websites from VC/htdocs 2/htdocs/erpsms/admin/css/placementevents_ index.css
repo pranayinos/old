@@ -1,0 +1,30 @@
+.submit-button{
+    float: left;
+    -moz-border-radius:10px;
+    -webkit-border-radius:10px;
+    background:none repeat scroll 0 0 #27292B;
+    border:medium none;
+    color:#FFFFFF;
+    cursor:pointer;
+    font-family:arial;
+    font-size:14px;
+    font-weight:bold;
+    padding:7px 10px;
+    min-width:50px;
+        text-decoration: none
+}
+.submit-button:hover { background: #373b3f; }
+#inner-tab-menu ul li {
+padding:0 10px;
+width:auto;
+}
+#new-placement-button{
+    padding-left:320px;
+    padding-top: 30px;
+}
+table#listing td.col-2 {
+width:30%;
+}
+table#listing td.col-4 {
+    width: 26%;
+}

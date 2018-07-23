@@ -1,0 +1,136 @@
+<?php 
+$emp_leave = new Main(); 
+$cat_id=$_GET[emp_id];	
+$newsRecordSet = $emp_leave->getdata('*',"emp_leave","leave_id='$cat_id'","leave_id DESC", "50");
+
+
+//Update code run 
+ if(isset($_POST['commit'])) // If the submit button was clicked
+    {
+      // emp edit catagory entry 
+ 	 		   $leave_id=$_POST['cat_id'];
+			  
+			    $post['leave_name'] =$_POST['leave_type_name'];
+			     $post['leave_code'] =$_POST['leave_type_code'];
+				   $post['leave_max_count'] =$_POST['leave_type_max_leave_count'];
+				    
+					   $post['leave_status'] =$_POST['leave_type_status'];
+			  
+			   if($emp_leave->updateData($post,"emp_leave","leave_id='$cat_id'"))
+				   {
+				$msg="Update  Added Succesfully";
+				header("location:?page=employee_attendance-add_leave_types&msg=$msg");			
+			}
+			else
+			{
+			$msg="Error :  Entry not done, Please check Values";
+			header("location:?page=employee_attendance-add_leave_types&error=$msg");
+			}		
+	}
+	
+?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html dir="ltr1"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+ <title><? echo $page_title ." | ". SITENAME ?></title>
+ <!-------------------- supportive files ----------->
+<?php include("include/support_file.php")?>
+<link href="css/add_category.css" media="screen" rel="stylesheet" type="text/css">
+ <!--------- Start head ---------------->
+ <!-------------Insert the 3 oct  code of validation--------------------------------------------->
+  <script>
+		jQuery(document).ready(function(){
+			// binds form submission and fields to the validation engine
+			jQuery("#formID").validationEngine();
+			
+		});
+	</script>
+<!-------------End the code of validation--------------------------------------------->   
+  </head>
+  <body>
+        
+    <!-- header menu --->
+    <?php include("include/topmenu.php")?>
+    <!-- end header menu ----->
+    
+
+    <div id="content_wrapper">
+      
+      <!-- Side bar -->
+   <?php include("include/sidebar5.php")?>
+           
+      <!-- end of side bar -->
+      <div id="content"> 
+<div id="content-header">
+  <img alt="Show_hr" src="../images/HR/show_hr.png">
+  <h1>Employee Settings</h1>
+  <h3>Editing Leave</h3>
+  <div id="app-back-button">
+    <a href="#" onClick="history.back(); return false;"><img alt="Back" border="0" src="../images/buttons/back.png"></a>
+  </div>
+</div>
+<!-- Insert the msg code ------------------------------------>
+    <div class="msg" ><?php echo $_GET[msg]?></div>
+    <div class="error" ><?php echo $_GET[error]?></div>
+<!-- End the msg code --------------------------------------->
+
+<div id="page-yield">
+
+ <?php  while( ($record = $newsRecordSet->getNextRecord()) !== false )
+    { 
+   ?>   
+   
+ <form action="#" id="formID" name="formID" method="post"><div style="margin:0;padding:0;display:inline"><input name="authenticity_token" type="hidden" value="JipL4+8ByrduGtXLkMOP/8nlXryeWMfTgndVfB7AK60="></div>
+        <div class="msg"><?php echo $_GET[msg]?></div>
+ <div class="error"><?php echo $_GET[error]?></div>
+      <div id="form-content">
+        <div class="label-field-pair">
+          <label for="category_name">Leave name</label>
+          <div class="text-input-bg"><input id="leave_type_name" name="leave_type_name" size="30" type="text" class="validate[required]  text-input" value="<?=$record['leave_name']?>"></div>
+        </div>
+
+        <div class="label-field-pair">
+          <label for="category_name">Leave code</label>
+          <div class="text-input-bg"><input id="leave_type_code" name="leave_type_code" size="30" type="text" class="validate[required]  text-input" value="<?=$record['leave_code']?>"></div>
+        </div>
+
+        <div class="label-field-pair">
+          <label for="category_name">Maximum leave count</label>
+          <div class="text-input-bg"><input id="leave_type_max_leave_count" name="leave_type_max_leave_count" size="30" type="text" class="validate[required]  text-input" value="<?=$record['leave_max_count']?>"></div>
+        </div>
+        <div class="extender"></div>
+
+        <!--<div class="label-field-pair">
+          <label for="category_name">Enable Carry Forward</label>
+          <div class="check_box"><input name="leave_type[carry_forward]" type="hidden" value="0"><input id="leave_type_carry_forward" name="leave_type_carry_forward" type="checkbox" value="1"></div>
+        </div>-->
+
+        <div class="label-radio-pair">
+          <label class="status">Status</label>
+
+          <input  id="leave_type_status" name="leave_type_status" type="radio" value="1" class="validate[required] radio" value="<?=$record['emp_cat_type']?>">
+          <label class="label_for_status" for="add_grade_status_true">Active</label>
+
+          <input id="leave_type_status" name="leave_type_status" type="radio" value="0" class="validate[required] radio" value="<?=$record['emp_cat_type']?>">
+          <label class="label_for_status" for="add_grade_status_false">Inactive</label>
+        </div>
+
+        <div id="submit-button">
+          <input name="commit" type="submit" value="► Update">
+        </div>
+      </div></form>
+
+<?php } ?>
+
+
+<div class="msg" ><?php echo $_GET[msg]?></div>
+ <div class="error" ><?php echo $_GET[error]?></div>
+  </div>
+      </div>
+
+      <div class="extender"></div>
+    </div>
+
+     <!-- footer -->
+  <?php include("include/footer.php")?>

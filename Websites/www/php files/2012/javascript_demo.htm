@@ -1,0 +1,28 @@
+<html>
+<head>
+<title>Welcome in JavaScript</title>
+<script language="javascript">
+function fun()
+{
+    var x = document.getElementById('t1').value;
+    if(x=="")
+    {
+        alert("Please enter your name!!!!");
+        return false;
+    }
+    else
+    {
+        document.write("Welcome "+x);
+        
+    }
+}
+</script>
+</head>
+<body >
+<form action="test.php" method="get"> 
+Enter Your Name:
+<input type="text" id="t1" name="txt" />
+<input type="submit" value="getmsg"  onclick="return fun()" />
+</form>
+</body>
+</html>

@@ -1,0 +1,28 @@
+
+<script src="jquery-1.3.1.js"></script>
+<script src="jquery.validate.js"></script>
+<script>
+function fun1()
+{
+$("#frm1").validate()
+}
+</script>
+<html>
+<head>
+<title>Test Form</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body onLoad="fun1()">
+
+<form action="validate.php" method="post" id="frm1" name="form" enctype="multipart/form-data">
+Name:<input type="text" name="cust_name" class="required"><br>
+Email-id:<input type="text" name="email" class="email"><br>
+Picture:<input type="file" name="file1" /><br>
+Message:<input type="text" name="message" style="height:50px" class="required"><br>
+Enter Image Text<input name="code" type="text">
+<img src="captcha.php" /><br>
+<input name="submit" type="submit" value="Submit">
+
+</form>
+</body>
+</html>

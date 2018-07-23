@@ -1,0 +1,162 @@
+« Programming interview questionsPHP interview questions, Part 2 »
+PHP interview questions, Part 1
+By admin | February 24, 2005
+Feel free to post the answers and discuss the questions in the comments. Mizanur Rahman also posted some detailed answers on his blog.
+
+What are the differences between Get and post methods in form submitting, give the case where we can use get and we can use post methods? 
+Who is the father of PHP and explain the changes in PHP versions? 
+How can we submit a form without a submit button? 
+In how many ways we can retrieve the date in the result set of mysql using PHP? 
+What is the difference between mysql_fetch_object and mysql_fetch_array? 
+What is the difference between $message and $$message? 
+How can we extract string ‘techinterviews.com ‘ from a string ‘http://www.techinterviews.com’ using regular expression of PHP? 
+How can we create a database using PHP and mysql? 
+
+What are the differences between require and include, include_once? 
+Can we use include (”techinterviews.php”) two times in a PHP page “makeit.PHP”? 
+What are the different tables present in mysql, which type of table is generated when we are creating a table in the following syntax: create table employee(eno int(2),ename varchar(10)) ? 
+Functions in IMAP, POP3 AND LDAP? 
+How can I execute a PHP script using command line? 
+Suppose your Zend engine supports the mode <? ?> Then how can u configure your PHP Zend engine to support <?PHP ?> mode ? 
+Shopping cart online validation i.e. how can we configure Paypal, etc.? 
+What is meant by nl2br()? 
+Draw the architecture of Zend engine? 
+What are the current versions of apache, PHP, and mysql? 
+What are the reasons for selecting lamp (linux, apache, mysql, PHP) instead of combination of other software programmes, servers and operating systems? 
+How can we encrypt and decrypt a data present in a mysql table using mysql? 
+How can we encrypt the username and password using PHP? 
+What are the features and advantages of object-oriented programming? 
+What are the differences between procedure-oriented languages and object-oriented languages? 
+What is the use of friend function? 
+What are the differences between public, private, protected, static, transient, final and volatile? 
+What are the different types of errors in PHP? 
+What is the functionality of the function strstr and stristr? 
+What are the differences between PHP 3 and PHP 4 and PHP 5? 
+How can we convert asp pages to PHP pages? 
+What is the functionality of the function htmlentities? 
+How can we get second of the current time using date function? 
+How can we convert the time zones using PHP? 
+What is meant by urlencode and urldocode? 
+What is the difference between the functions unlink and unset? 
+How can we register the variables into a session? 
+How can we get the properties (size, type, width, height) of an image using PHP image functions? 
+How can we get the browser properties using PHP? 
+What is the maximum size of a file that can be uploaded using PHP and how can we change this? 
+How can we increase the execution time of a PHP script? 
+How can we take a backup of a mysql table and how can we restore it. ? 
+How can we optimize or increase the speed of a mysql select query? 
+How many ways can we get the value of current session id? 
+How can we destroy the session, how can we unset the variable of a session? 
+How can we destroy the cookie? 
+How many ways we can pass the variable through the navigation between the pages? 
+What is the difference between ereg_replace() and eregi_replace()? 
+What are the different functions in sorting an array? 
+How can we know the count/number of elements of an array? 
+What is the PHP predefined variable that tells the What types of images that PHP supports? 
+How can I know that a variable is a number or not using a JavaScript? 
+List out some tools through which we can draw E-R diagrams for mysql. 
+How can I retrieve values from one database server and store them in other database server using PHP? 
+List out the predefined classes in PHP? 
+How can I make a script that can be bilanguage (supports English, German)? 
+What are the difference between abstract class and interface? 
+How can we send mail using JavaScript? 
+
+
+
+PHP interview questions, Part 2
+By admin | February 24, 2005
+How can we repair a MySQL table? 
+What are the advantages of stored procedures, triggers, indexes? 
+What is the maximum length of a table name, database name, and fieldname in MySQL? 
+How many values can the SET function of MySQL take? 
+What are the other commands to know the structure of table using MySQL commands except explain command? 
+
+How many tables will create when we create table, what are they? 
+What is the purpose of the following files having extensions 1) .frm 2) .myd 3) .myi? What do these files contain? 
+What is maximum size of a database in MySQL? 
+Give the syntax of Grant and Revoke commands? 
+Explain Normalization concept? 
+How can we find the number of rows in a table using MySQL? 
+How can we find the number of rows in a result set using PHP? 
+How many ways we can we find the current date using MySQL? 
+What are the advantages and disadvantages of Cascading Style Sheets? 
+What type of inheritance that PHP supports? 
+How can increase the performance of MySQL select query? 
+The structure of table view buyers is as follows: 
++----------------+-------------+------+-----+---------+----------------+
+| Field | Type | Null | Key | Default | Extra |
++----------------+-------------+------+-----+---------+----------------+
+| user_pri_id | int(15) | | PRI | NULL | auto_increment |
+| userid | varchar(10) | YES | | NULL | |
++----------------+-------------+------+-----+---------+----------------+
+the value of user_pri_id the last row 2345 then What will happen in the following conditions?
+
+Condition1: Delete all the rows and insert another row then. What is the starting value for this auto incremented field user_pri_id ,
+Condition2: Delete the last row(having the field value 2345) and insert another row then. What is the value for this auto incremented field user_pri_id 
+
+What are the advantages/disadvantages of MySQL and PHP? 
+What is the difference between GROUP BY and ORDER BY in Sql? 
+What is the difference between char and varchar data types? 
+What is the functionality of md5 function in PHP? 
+How can I load data from a text file into a table? 
+How can we know the number of days between two given dates using MySQL? 
+How can we know the number of days between two given dates using PHP? 
+How can we change the name of a column of a table? 
+How can we change the name and data type of a column of a table? 
+What are the differences between drop a table and truncate a table? 
+When you want to show some part of a text displayed on an HTML page in red font color, what different possibilities are there to do this? What are the advantages/disadvantages of these methods? 
+When viewing an HTML page in a Browser, the Browser often keeps this page in its cache. What can be possible advantages/disadvantages of page caching? How can you prevent caching of a certain page (please give several alternate solutions)? 
+What are the different methods of passing data or information between two calls of a web page? What are the advantages/disadvantages of these methods? 
+An Apache web server is running on a Linux system. Suddenly, the web server delivers the pages very slow. How could you find out possible reasons for that (when using system commands, please specify their names)? 
+What are the different ways to login to a remote server? Explain the means, advantages and disadvantages? 
+Please give a regular expression (preferably Perl/PREG style), which can be used to identify the URL from within a HTML link tag. Example: The regular expression should match the tag <A HREF=”http://www.yoursite.com/”> and give the URL (”http://www.yoursite.com /”) as a return result. Tags should also be matched if they contain other attributes than the HREF attribute. 
+A select query over a large table runs very slow because of the growing number of entries in that table. What different measures could be taken to improve speed? 
+A company wants to store their invoices in a database. They already have their customers and articles in that database. Both customer and article are each identified by an unique integer value. Please create the SQL statements for creating the necessary table(s) for storing the invoices in a MySQL database. An invoice should hold information like invoice number, customer, date, article(s) and quantity etc. 
+For the database from the previous question, please give an SQL query which returns the invoice number of all invoices which contain the article with the number “1234?. The query should be able to run under a MySQL 4.0 database. 
+How would you backup and restore a big MySQL database? What are the advantages of the approach which you have taken over the others? 
+Create a PHP web script with the following attributes: on start, three HTML form elements are shown: an string input field, a checkbox field, a dropdown/pull down list with 5 elements and a submit button. On submission, the form should be redisplayed (while remaining all options/inputs as the user has selected/entered them). Additionally, the selections/inputs of the user should be displayed in text. Please solve this without the use of any external libraries. 
+What is MIME? 
+What is PEAR in PHP? 
+How can I use the COM components in PHP? 
+How can I load the DLLs dynamically? 
+How many ways we can give the output to a browser? 
+How can we know that a session is started or not? 
+What is the default session time in PHP and how can I change it? 
+What changes I have to done in PHP.ini file for file uploading? 
+What are the differences between MySQL_fetch_array(), MySQL_fetch_object(), MySQL_fetch_row()? 
+How can I set a cron and how can i execute it in Unix, Linux, and windows? 
+Steps for the payment gateway processing? 
+How many ways I can register the variables into session? 
+Explain different types of errors in PHP (i.e. arguments in errorreporting function)? 
+How many ways I can redirect a PHP page? 
+List out different arguments in PHP header function? 
+What type of headers have to add in the mail function in which file a attached? 
+What is the difference between <?PHP and <? And which is preferable? 
+What are the differences between include() and include_once() functions? 
+Describe the importance of database abstraction layers in PHP and database connection? 
+Explain MySQL optimization? 
+What is the difference between using copy() and move() function in PHP file uploading? 
+What is the difference between Reply-to and Return-path in the headers of a mail function? 
+Explain about Type Juggling in PHP? 
+How can I get the only name of the current executing file? 
+How can I embed a Java program in PHP file and what changes have to be done in PHP.ini file? 
+How can I find what type of images that the PHP version supports? 
+The table tbl_sites contains the following data: 
+-----------------------------------------------------
+Userid sitename country
+------------------------------------------------------
+1 sureshbabu indian
+2 PHPprogrammer andhra
+3 PHP.net usa
+4 PHPtalk.com germany
+5 MySQL.com usa
+6 sureshbabu canada
+7 PHPbuddy.com pakistan
+8. PHPtalk.com austria
+9. PHPfreaks.com sourthafrica
+10. PHPsupport.net russia
+11. sureshbabu australia
+12. sureshbabu nepal
+13. PHPtalk.com italy
+Write a select query that will displayed the duplicated site name and how many times it is duplicated? … 
+

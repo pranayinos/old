@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+	<meta name="author" content="UPPR" />
+    <link  rel="icon" type="image/png" href = "images/dice.png"/>
+	<title>uppAuction - Home</title>
+<style type="text/css">-a
+a:hover{background-color: #ECFECB;}
+a{color: #6F1702;text-decoration: none}
+</style>
+</head>
+<body >
+<center><div align="center" style="height: 90px; width:1024"> 
+<img src="images/t1.jpg" alt="Logo" width="1036" height="89">
+</div>
+<div style="background-repeat: no-repeat; height: 38px; width:1024;"><img src="images/menu.jpg" width="1036" height="38" /></div>
+<div align="center" style="border: black; border-style: groove; height: 300px; width: 1024px; margin-top:3px;  padding-top: 5px;"  >
+<h1 align="center" style="color: #000;">Welcome to the world of Auction</h1>
+<hr  width="80%"/>
+<br />
+<?php
+	setcookie("user", "", time()-3600);
+    setcookie("user_type", "", time()-3600);
+?>
+
+<form method="post" action="login.php">
+<table width="300" cellspacing="5" style="height: 20px; border-bottom: black;">
+<tr>
+  <th colspan="2" bgcolor="#0000FF" align="center" style="color:#FFF">Login</th></tr>
+<tr>
+  <td> &nbsp;&nbsp;Username </td>
+  <td align="center"><input  type="text" name="u_n" id="u_n"/> &nbsp; &nbsp; </td></tr>
+<tr>
+  <td> &nbsp;&nbsp;Password</td>
+  <td align="center"><input  type="password" name="pass" id="pass"/> &nbsp; &nbsp; </td></tr>
+
+<tr><td colspan="2" align="center"><center><br ><input type="submit" name="sub" value="Login"/></center></td></tr>
+</table>
+</form></div>
+
+<div style="margin-top: 10px; background-color: #0000FF;; color:#000000; font-size: x-small;width: 1024px;">
+<center>
+  Best viewed on  Google Chrome 21 and higher<br/>At 1366 &times; 768 resolution <br />
+copyright upp &copy; 2012 
+</center></div>
+</center>
+
+</center>
+</body>
+</html>

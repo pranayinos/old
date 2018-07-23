@@ -1,0 +1,47 @@
+@charset "utf-8";
+/* CSS Document */
+
+#heading
+{	
+	height:70px;
+	font-size:36px;
+	background-color:#A587B8;
+	padding-top:20px
+}
+
+#pic
+{
+	width:70%;
+	height:376px; 
+	float:left
+}
+
+#body 
+{
+	height:276px; 
+	float:right; 
+	background-color: #2CCDFC; 
+	width:30%; 
+	padding-top:100px; 
+}
+
+#footer
+{
+	margin-top:385px
+}
+
+#newusr
+{
+	font-size:12px 
+}
+
+#ftext
+{
+	font-size:9px
+}
+
+#nw2
+{
+	font-size:13px;
+	color:#FF0033 
+}

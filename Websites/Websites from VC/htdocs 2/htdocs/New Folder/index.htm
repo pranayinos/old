@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Home</title>
+<link rel="stylesheet" href="mysh1.css">
+</head>
+<script src="jquery-1.3.2.min.js"></script>
+<script src="jquery.validate.min.js"></script>
+<script>
+function val()
+{
+	$("#form1").validate();
+}
+</script>
+
+<body onUnload="val()">
+<div class="head" id="head">
+<h1><p align="center">
+ Welcome 
+</p> 
+</h1>
+<hr />
+</div>
+<div class="pic" id="pic"> 
+<img src="buildings.jpg"> 
+</div>
+<br>
+<div  class="body" id="body">
+  <form id="form1" name="form1" method="post" action="login.php">
+      <hr>
+      <table width="200" align="center">
+      <td colspan="2" align="center"> <font size="+1"> Login </font> &nbsp;</td>
+      <tr>
+        <td> <label for="name">Username</label>&nbsp;</td>
+        <td><input type="text" name="name" id="name" class="required email" /></td>
+      </tr>
+      <tr>
+        <td><label for="pwd">Password</label>&nbsp;</td>
+        <td> <input type="password" name="pwd" id="pwd" class="required" />
+      </tr>
+      <tr>
+        <td colspan="2" align="right"><input type="submit" name="submit" id="submit" value="Submit" />&nbsp;</td>
+      </tr>
+    </table>
+    <hr>
+    <a href="register.php"><p id=nw align=right >New user</a> &nbsp; &nbsp; &nbsp; </p>
+    </form>
+    </div>
+
+<div id="footer"> 
+<hr> 
+ <p  id=ftext align="center"> Developed here <br> 2013 </p>
+</div>  
+</body>
+</html>
